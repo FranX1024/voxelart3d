@@ -1,0 +1,36 @@
+<html>
+  <body style="margin: 0">
+    <div style="width: 484px; height: 730px; background-color: #AAAAAA;">
+      <canvas width="480" height="480" style="width: 480px; height: 480px; border: 2px inset;" id="voxelscreen"></canvas>
+      <div style="overflow-y: scroll; width: 480px; height: 240px; margin-top: 2px; border: 2px inset;">
+        <div>
+          <span> FOV: </span> <input type="range" max="120" value="90" id="fov" style="width: 360px; position: absolute; left: 100px;">
+        </div>
+        <div>
+          <span> DIST: </span> <input type="range" max="6" value="2" id="dist" style="width: 360px; position: absolute; left: 100px;">
+        </div>
+        <div>
+          <span> Y-POS: </span> <input type="range" max="16" value="0" id="ypos" style="width: 360px; position: absolute; left: 100px;">
+        </div>
+        <div></div>
+        <hr>
+        <div>
+          <span> RGB sliders for tile color: [</span><span id="show_color" style="font-weight: 1000; background-color: #0000ff; width: 10px;">&#160;&#160;&#160;&#160;</span><span>]</span>
+        </div>
+        <div>
+          <span> Red: </span> <input type="range" max="255" value="0" id="red" style="width: 360px; position: absolute; left: 100px;">
+        </div>
+        <div>
+          <span> Green: </span> <input type="range" max="255" value="0" id="green" style="width: 360px; position: absolute; left: 100px;">
+        </div>
+        <div>
+          <span> Blue: </span> <input type="range" max="255" value="255" id="blue" style="width: 360px; position: absolute; left: 100px;">
+        </div>
+        <hr>
+      </div>
+    </div>
+    <script src="engine.js"></script>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
